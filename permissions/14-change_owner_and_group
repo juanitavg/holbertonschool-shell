@@ -1,2 +1,2 @@
 #!/bin/bash
--R chown vicent[:group] staff
+chown -R vicent[:group] staff
