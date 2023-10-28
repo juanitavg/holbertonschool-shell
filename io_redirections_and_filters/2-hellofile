@@ -1,2 +1,2 @@
 #!/bin/bash
-head /etc/passwd
+sort -t ':' -k 7 /etc/passwd | head
