@@ -1,2 +1,2 @@
 #1/bihn/bash
-ls -lan
+ls -la --numeric-uid-gid
