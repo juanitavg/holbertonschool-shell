@@ -1,6 +1,6 @@
 #!/bin/bash
 for item in */; do
   if [ -d "$item" ]; then
-    chmod a+x "$item"
+    chmod 755 "$item"
   fi
 done
