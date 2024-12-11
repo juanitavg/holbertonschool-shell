@@ -1,3 +1,2 @@
 #!/bin/bash
 sudo chown betty:betty hello
-ls -l hello | awk '{print $3}'
