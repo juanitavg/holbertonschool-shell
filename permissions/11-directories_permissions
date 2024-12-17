@@ -1,2 +1,2 @@
 #!/bin/bash
-for item in */; do chmod a+x "$item"; done
+chmod a+x */
