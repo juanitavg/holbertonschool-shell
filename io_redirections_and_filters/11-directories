@@ -1,2 +1,2 @@
 #!/bin/bash
-count=0; for dir in $(find . -mindepth 1 -type d); do ((count++)); done; echo $count
+count=$(find . -mindepth 1 -type d | wc -l) echo $count
