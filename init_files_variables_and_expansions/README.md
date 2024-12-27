@@ -1,0 +1,1 @@
+Este repositorio contiene una serie de scripts de shell que realizan diversas tareas.
