@@ -1,4 +1,2 @@
 #!/bin/bash
-find . -type f -iname "*.gif" | \
-awk -F/ '!seen[$1]++ {print $NF}' | \
-rev | cut -d. -f2- | rev | LC_ALL=C sort -f
+find . -type f -iname "*.gif" -exec dirname {} \; | sort -u | head -n 2
