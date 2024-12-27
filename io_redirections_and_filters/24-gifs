@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname "*.gif" -printf "%f\n" | rev | cut -d. -f2- | rev | LC_ALL=C sort -f
+find . -type f -iname "*.gif" -exec dirname {} \; | sort -u | xargs -I{} find "{}" -maxdepth 1 -type f -iname "*.gif" -exec basename {} .gif \; | LC_ALL=C sort -f
